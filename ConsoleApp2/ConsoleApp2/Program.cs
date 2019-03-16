@@ -48,8 +48,9 @@ namespace Deliverable_1
             //Display total amount in currency formats of various countries: United States, Sweden, Japan, and Thailand
             Double RoundedTotal = Math.Round(total, 2);
             Double WholeTotal = Math.Round(total,0);
+            //Converts output to UTF8 Standard
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             //US
-            
             Console.WriteLine("The United States Currency amount is " + "$" + RoundedTotal);
             //Swedish
             Console.WriteLine("The Sweden Currency amount is " + RoundedTotal + " kr");
